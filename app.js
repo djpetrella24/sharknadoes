@@ -26,7 +26,7 @@ var svg = d3
 var chartGroup = svg.append("g")
     .attr("transform", `translate(${chartMargin.left}, ${chartMargin.top})`);
 
-d3.csv("attacks.csv").then(function (sharkData) {
+d3.json("shark_attacks.db").then(function (sharkData) {
     console.log(sharkData)
     var sharkAttacks = sharkData
     var dateAttacks = [];

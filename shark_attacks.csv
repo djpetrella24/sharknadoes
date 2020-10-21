@@ -1,0 +1,105 @@
+Id,Year,Type,Country,Area,Activity,Fatal,Species
+1,2020,Unprovoked,USA,Maui,Stand-Up Paddle boarding,N,Tiger shark
+2,2020,Unprovoked,AUSTRALIA,New South Wales,Surfing,N,"""A small shark"""
+3,2020,Unprovoked,NEW ZEALAND,Southland,Surfing,N,Broadnose seven gill shark?
+4,2020,Unprovoked,AUSTRALIA,Queensland,Swimming,N,Lemon shark
+5,2020,Unprovoked,AUSTRALIA,Western Australia,Scuba diving,Y,White shark
+6,2019,Unprovoked,AUSTRALIA,Queensland,Swimming,N,"Shovelnose ""shark"" which is a ray, not a shark)"
+7,2019,Provoked,AUSTRALIA,New South Wales,Fishing,Y,White shark
+8,2019,Provoked,REUNION ISLAND,Cilaos,Kayaking,Y,3.4 m tiger shark
+9,2019,Unprovoked,USA,Hawaii,Stand-Up Paddleboarding,N,10'-12' tiger shark
+10,2019,Unprovoked,USA,Florida,Surfing,N,Juvenile blacktip shark
+11,2019,Provoked,FRENCH POLYNESIA,Moorea,Feeding sharks,N,5' blacktip shark
+12,2019,Unprovoked,USA,Florida,Surfing,N,4' to 5' blacktip shark
+13,2019,Watercraft,SOUTH AFRICA,Eastern Cape Province,Kayaking fishing,N,"White shark, 4 m"
+14,2019,Unprovoked,REUNION ISLAND,Saint-Gilles,Snorkeling,Y,10' tiger shark
+15,2019,Unprovoked,AUSTRALIA,Queensland,Snorkeling,N,Tiger shark
+16,2019,Provoked,USA,Florida,Surfing,N,4' to 5' shark
+17,2019,Unprovoked,FRENCH POLYNESIA,Moorea,Snorkeling,Y,Oceanic whitetip shark
+18,2019,Unprovoked,AUSTRALIA,Queensland,Surfing,N,7' shark
+19,2019,Unprovoked,AUSTRALIA,New South Wales,Surfing,N,"White shark, 3.5 m"
+20,2019,Unprovoked,USA,Guam,Surfing,N,Juvenile shark
+21,2019,Provoked,AUSTRALIA,Northern Territory,Fishing,N,1+ m shark
+22,2019,Unprovoked,USA,Hawaii,Surfing,N,6' to 7' shark
+23,2019,Unprovoked,USA,Florida,Surfing,N,2' shark
+24,2019,Unprovoked,AUSTRALIA,Western Australia,Spearfishing,N,14' white shark
+25,2019,Unprovoked,USA,Cayman Islands,Spearfishing,N,Nurse shark
+26,2019,Provoked,USA,Florida,Surfing,N,6.5' shark
+27,2019,Unprovoked,USA,Hawaii,Surfing,N,10' to 12' shark
+28,2019,Provoked,USA,North Carolina,Fishing,N,"Blacktip shark, 5'"
+29,2019,Unprovoked,USA,Florida,Surfing,N,Blacktip or Spinner shark
+30,2019,Unprovoked,USA,Rhode Island,Surfing,N,Sandtiger shark
+31,2019,Unprovoked,NEW ZEALAND,Chatham Islands,Scuba diving,N,"White shark, 3m"
+32,2019,Unprovoked,USA,North Carolina,Body-surfing,N,shark pup
+33,2019,Unprovoked,SOUTH AFRICA,Eastern Cape Province,Surfing,N,"White shark, juvenile"
+34,2019,Unprovoked,AUSTRALIA,Queensland,Paddle boarding,N,Bull shark pup
+35,2019,Unprovoked,USA,Georgia,Swimming,N,"Bull shark, 4' to 5'"
+36,2019,Unprovoked,NEW CALEDONIA,Noumea,Swimming,N,"Bull shark, 3.5 m"
+37,2019,Unprovoked,USA,New Jersey,Body Boarding,N,Shark involvement unconfirmed but considered probable
+38,2019,Unprovoked,USA,Hawaii,Surfing,N,8' shark
+39,2019,Unprovoked,AUSTRALIA,New South Wales,Spearfishing,N,"Grey nurse shark, 3 m female"
+40,2019,Unprovoked,USA,Hawaii,Kayaking,N,Tiger shark
+41,2019,Provoked,USA,Hawaii,Picking opihi,N,Tiger shark
+42,2019,Unprovoked,USA,Hawaii,Swimming,N,Cookiecutter shark
+43,2019,Provoked,CHINA,Liaoning Province,Diving in shark tank,N,Sand tiger shark
+44,3019,Watercraft,USA,Hawaii,Paddling an outrigger canoe,N,12' shark
+45,2019,Unprovoked,AUSTRALIA,Queensland,Swimming,N,"Grey reef shark, 4'"
+46,2019,Unprovoked,USA,Florida,Surfing,N,4' shark
+47,2019,Unprovoked,USA,Hawaii,Swimming,N,Cookiecutter shark
+48,2019,Unprovoked,USA,Florida,Boogie boarding,N,Spinner shark
+49,2019,Provoked,SOUTH AFRICA,Eastern Cape Province,Fishing,N,2.5 m shark
+50,2019,Unprovoked,BRAZIL,Fernando de Noronha,Surfing,N,Lemon shark
+51,2019,Unprovoked,USA,Hawaii,Surfing,N,Tiger shark
+52,2019,Unprovoked,USA,Florida,Spearfishing,N,Bull shark
+53,2019,Questionable,NEW ZEALAND,South Island,Boogie boarding,N,Reported as shark bite but injury caused by stingray
+54,2019,Unprovoked,AUSTRALIA,Western Australia,Swimming,N,Wobbegong shark
+55,2019,Provoked,AUSTRALIA,Queensland,Wading,N,Reported as shark attacks but injuries caused by toadfish
+56,2019,Unprovoked,USA,California,Surfing,N,"White shark, 4.6m"
+57,2018,Unprovoked,MEXICO,Sonora,Diving,Y,Tiger shark
+58,2018,Provoked,AUSTRALIA,New South Wales,,N,Wobbegong shark
+59,2018,Provoked,NEW ZEALAND,North Island,Spearfishing,N,"Mako shark, 7'"
+60,2018,Unprovoked,NEW ZEALAND,North Island,Spearfishing,N,Bronze whaler 2.5m
+61,2018,Unprovoked,AUSTRALIA,Northern Territory,Spearfishing,N,Reef shark x 2
+62,2018,Unprovoked,SOUTH AFRICA,KwaZulu-Natal,Fishing,N,"White shark, 3m"
+63,2018,Unprovoked,AUSTRALIA,Western Australia,Body Boarding,N,Sandtiger shark
+64,2018,Unprovoked,BAHAMAS,Exumas,Swimming,N,Nurse shark
+65,2018,Unprovoked,EGYPT,Hurghada,Scuba diving,N,Oceanic whitetip shark
+66,2018,Unprovoked,AUSTRALIA,New South Wales,Surfing,N,5' shark
+67,2018,Unprovoked,USA,Florida,Surfing,N,3' to 4' shark
+68,2018,Unprovoked,AUSTRALIA,New South Wales,Body Surfing,N,Bull shark?
+69,2018,Unprovoked,NEW ZEALAND,North Island,Surfing,N,"White Shark, 3.2m to 3.5m"
+70,2018,Unprovoked,AUSTRALIA,Western Australia,Spearfishing,N,"White shark, 5m female"
+71,2018,Unprovoked,USA,Florida,Surfing,N,Spinner shark
+72,2018,Provoked,AUSTRALIA,Queensland,Fishing,N,"""reef shark"""
+73,2018,Unprovoked,USA,New York,Boogie Boarding,N,Sandtiger shark
+74,2018,Unprovoked,USA,New York,Wading,N,Sandtiger shark
+75,2018,Provoked,USA,California,Wading,N,"Salmon shark, juvenile"
+76,2018,Unprovoked,BAHAMAS,The Exuma Cays,Floating,N,"Nurse shark, 5'"
+77,2018,Provoked,USA,Florida,Snorkeling,N,"Injury most likely caused by barracuda, not a shark"
+78,2018,Boating,USA,California,Paddling,N,White shark
+79,2018,Provoked,USA,Florida,Fishing,N,Nurse shark
+80,2018,Unprovoked,AUSTRALIA,New South Wales,Surfing,N,2 m shark
+81,2018,Provoked,MEXICO,Colima,Free diving,N,"Tiger shark, 3m"
+82,2018,Unprovoked,BRAZIL,Pernambuco,Swimming,Y,Tiger shark
+83,2018,Unprovoked,USA,Florida,Fishing,N,"Lemon shark, 3'"
+84,2018,Unprovoked,USA,Florida,Walking,N,"Bull shark, 6'"
+85,2018,Provoked,AUSTRALIA,Queensland,Feeding sharks,N,Grey reef shark
+86,2018,Provoked,AUSTRALIA,Westerm Australia,Feeding sharks,N,"Tawny nurse shark, 2m"
+87,2018,Provoked,USA,Texas,Fishing,N,Sandtiger shark'
+88,2018,Unprovoked,COSTA RICA,Cocos Island,Scuba diving,N,Tiger shark
+89,2018,Unprovoked,AUSTRALIA,Western Australia,Surfing,N,3 m shark
+90,2018,Unprovoked,AUSTRALIA,Western Australia,Surfing,N,"White shark, 3.5 m"
+91,2018,Unprovoked,MALDIVES,Alifu Alifu Atoll,Fishing,N,Tiger shark
+92,2018,Unprovoked,SOUTH AFRICA,Western Cape Province,Paddle-skiing,N,"White shark, 2.5 m"
+93,2018,Unprovoked,USA,Hawaii,Body boarding,N,6' shark
+94,2018,Unprovoked,THAILAND,Hua Hin,Swimming,N,Juvenile bull shark
+95,2018,Unprovoked,BAHAMAS,New Providence,Surfing,N,Tiger shark
+96,2018,Unprovoked,NEW CALEDONIA,,Windsurfing,N,2 m shark
+97,2018,Unprovoked,BAHAMAS,,Swimming,N,Bull shark
+98,2018,Unprovoked,SOUTH AFRICA,Eastern Cape Province,Surfing,N,White shark
+99,2018,Unprovoked,USA,Hawaii,Stand-Up Paddleboarding,N,"Tiger shark, 12'"
+100,2018,Unprovoked,AUSTRALIA,Western Australia,Wading,N,Wobbegong shark
+101,2018,Unprovoked,AUSTRALIA,Victoria,Swimming,N,3.5 m shark
+102,2018,Unprovoked,AUSTRALIA,Victoria,Surfing,N,1.8 m shark
+103,2018,Unprovoked,SOUTH AFRICA,KwaZulu-Natal,Scuba Diving,N,Blacktip shark
+104,2018,Unprovoked,AUSTRALIA,New South Wales,Swimming,N,"Juvenile white shark, 2.7 to 3.2 m"
