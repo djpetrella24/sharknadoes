@@ -1,0 +1,90 @@
+[
+   {
+      "date": "2020-10-09",
+      "year": 2020,
+      "type": "Unprovoked",
+      "country": "AUSTRALIA",
+      "area": "Western Australia",
+      "location": "Kelp Beds Beach (Kelpies)",
+      "activity": "Surfing",
+      "fatal": "Y",
+      "species": "White Shark"
+   },
+   {
+      "date": "2019-06-12",
+      "year": 2019,
+      "type": "Provoked",
+      "country": "USA",
+      "area": "Florida",
+      "location": "Miami Beach, Miami-Dade County",
+      "activity": "Body Surfing",
+      "fatal": "N",
+      "species": "Bronze Whaler"
+   },
+   {
+      "date": "2019-07-31",
+      "year": 2019,
+      "type": "Unprovoked",
+      "country": "USA",
+      "area": "North Carolina",
+      "location": "Cape Hatterus",
+      "activity": "Surf Fishing",
+      "fatal": "Y",
+      "species": "Black Tip"
+   },
+   {
+      "date": "2018-01-23",
+      "year": 2018,
+      "type": "Provoked",
+      "country": "Mexico",
+      "area": "Cancun",
+      "location": "Blood Beach",
+      "activity": "Swimming",
+      "fatal": "Y",
+      "species": "Lemon Shark"
+   },
+   {
+      "date": "2017-04-14",
+      "year": 2017,
+      "type": "Unprovoked",
+      "country": "USA",
+      "area": "Texas",
+      "location": "Galveston Beach",
+      "activity": "Surfing",
+      "fatal": "N",
+      "species": "White Shark"
+   },
+   {
+      "date": "2020-07-04",
+      "year": 2020,
+      "type": "Unprovoked",
+      "country": "France",
+      "area": "Paris",
+      "location": "Arc de Triumph",
+      "activity": "Swimming",
+      "fatal": "N",
+      "species": "Bagette Shark"
+   },
+   {
+      "date": "2019-10-18",
+      "year": 2019,
+      "type": "Unprovoked",
+      "country": "AUSTRALIA",
+      "area": "Queensland",
+      "location": "Kangaroo Cove",
+      "activity": "Drinking",
+      "fatal": "Y",
+      "species": "Land Shark"
+   },
+   {
+      "date": "2018-09-26",
+      "year": 2017,
+      "type": "Unprovoked",
+      "country": "Spain",
+      "area": "Gibralter",
+      "location": "The Big Rock",
+      "activity": "Swimming",
+      "fatal": "N",
+      "species": "Black Tip"
+   }
+]
