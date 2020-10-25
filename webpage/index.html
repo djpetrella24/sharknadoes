@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Shark Attack Project</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+
+    <!-- Marker Cluster CSS -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="static/css/jumbotron.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav> -->
+    
+    <main role="main">
+    
+      <!-- Main jumbotron -->
+      <div class="jumbotron jumbotron-fluid text-center"> 
+        <div class="container">
+          
+          <!-- <audio controls>
+            <source src="../../assets/audio/Jaws.mp3" type="audio/mpeg">
+          </audio> -->
+
+          <br><br><br>
+          <h1 class="display-1">Shark Attack ! ! !</h1>
+          <br><br>
+          <h3 style='color:white;'>This project explores the many metrics surrounding shark attacks on humans to determine if human - shark encounters can be avoided in the future.</h3>
+          <br>
+          <hr class="my-4">
+          <h5 style='color:white;'>The Global Shark Attack File available from the Shark Research Institute was utilized as a data source for this analysis.</h5>
+          <br>
+          <p><a class="btn btn-danger btn-med" href="https://www.sharks.org/global-shark-attack-file" role="button">Shark Research Institute &raquo;</a></p>
+        </div>
+        <p style='color:lightgrey; text-align:right; margin: 0px 0px;'>Image courtesy of https://travel.padi.com/d/cocos-island</p>
+      </div>
+      <br>
+
+      <!-- Filter Button Row -->
+      <div class="container text-center">
+
+        <!-- Button 1 -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Filter by Year
+          </button>
+          <div class="dropdown-menu">
+            <!-- insert button 1 dropdown code here -->
+            <a class="dropdown-item" href="#">2020</a>
+            <a class="dropdown-item" href="#">2019</a>
+            <a class="dropdown-item" href="#">2018</a>
+            <a class="dropdown-item" href="#">2017</a>
+            <a class="dropdown-item" href="#">2016</a>
+            <a class="dropdown-item" href="#">2015</a>
+            <a class="dropdown-item" href="#">2014</a>
+            <a class="dropdown-item" href="#">2013</a>
+            <a class="dropdown-item" href="#">2012</a>
+            <a class="dropdown-item" href="#">2011</a>
+          </div>
+        </div>
+
+        <!-- Button 2 -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Filter by Region
+          </button>
+          <div class="dropdown-menu">
+            <!-- insert button 2 dropdown code here -->
+            <a class="dropdown-item" href="#">Florida</a>
+            <a class="dropdown-item" href="#">Georgia</a>
+            <a class="dropdown-item" href="#">South Carolina</a>
+            <a class="dropdown-item" href="#">North Carolina</a>
+            <a class="dropdown-item" href="#">Alabama</a>
+            <a class="dropdown-item" href="#">Mississippi</a>
+            <a class="dropdown-item" href="#">Texas</a>
+          </div>
+        </div>
+
+        <!-- Button 3 -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Filter by Activity
+          </button>
+          <div class="dropdown-menu">
+            <!-- insert button 3 dropdown code here -->
+            <a class="dropdown-item" href="#">Fishing</a>
+            <a class="dropdown-item" href="#">Scuba</a>
+            <a class="dropdown-item" href="#">Snorkeling</a>
+            <a class="dropdown-item" href="#">Surfing</a>
+            <a class="dropdown-item" href="#">Swimming</a>
+            <a class="dropdown-item" href="#">Other</a>
+            </div>
+        </div>
+
+        <!-- Button 4 -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Filter by Species
+          </button>
+          <div class="dropdown-menu">
+            <!-- insert button 4 dropdown code here -->
+            <a class="dropdown-item" href="#">White</a>
+            <a class="dropdown-item" href="#">Tiger</a>
+            <a class="dropdown-item" href="#">Mako</a>
+            <a class="dropdown-item" href="#">Blue</a>
+            <a class="dropdown-item" href="#">Blacktip</a>
+            <a class="dropdown-item" href="#">Bull</a>
+            <a class="dropdown-item" href="#">Whitetip</a>
+            <a class="dropdown-item" href="#">Lemon</a>
+            <a class="dropdown-item" href="#">Reef</a>
+            <a class="dropdown-item" href="#">Spinner</a>
+            <a class="dropdown-item" href="#">Wobbegong</a>
+          </div>
+        </div>
+
+        <!-- Button 5 -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Another Filter ?
+          </button>
+          <div class="dropdown-menu">
+            <!-- insert button 5 dropdown code here -->
+            <a class="dropdown-item" href="#">A</a>
+            <a class="dropdown-item" href="#">B</a>
+          </div>
+        </div>
+      </div>
+      <br><br> 
+
+      <!-- <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4"> -->
+        <!-- <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"> -->
+          <h1 style='color: red; text-align:center'>USA Shark Attack Location Map</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+          </div>
+        </div>
+  
+        <!-- insert map here -->
+        <canvas class="my-4 w-100" id="map" width="600" height="250" background-color="red"></canvas>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Bar Chart</h2>
+            <h2 style='color: red;'>Global Shark Attacks per Year</h2>
+            <!-- insert chart here -->
+            <canvas class="my-4 w-100" id="map" width="300" height="300">
+            </canvas>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          </div>
+
+          <div class="col-md-4">
+            <h2>Pie Chart</h2>
+            <h2 style='color: red;'>Global Shark Attacks by Species</h2>
+            <canvas class="my-4 w-100" id="map" width="300" height="300">
+            </canvas>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          </div>
+
+          <div class="col-md-4">
+            <h2>Other Chart</h2>
+            <h2 style='color: red;'>Other Stuff</h2>
+            <canvas class="my-4 w-100" id="map" width="300" height="300">
+            </canvas>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          </div>
+        </div>
+    
+        <hr>
+    
+      </div> <!-- /container -->
+    
+    </main>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+
+    <!-- d3 JS -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- Marker Cluster JS -->
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+
+    <!-- Our JS -->
+    <script type="text/javascript" src="static/js/config.js"></script>
+    <script type="text/javascript" src="static/js/logic.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  </body>
+</html>

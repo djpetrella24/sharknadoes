@@ -26,43 +26,32 @@ var svg = d3
 var chartGroup = svg.append("g")
     .attr("transform", `translate(${chartMargin.left}, ${chartMargin.top})`);
 
-d3.json("shark_attacks.db").then(function (sharkData) {
-    console.log(sharkData)
-    var sharkAttacks = sharkData
-    var dateAttacks = [];
-    var yearAttacks = [];
-    var areaAttacks = [];
-    var locAttacks = [];
+d3.json("/data").then(function (sharkData) {
+    // log shark data
+    console.log(sharkData);
 
-    for (var i = 0; i < sharkAttacks.length; i++) {
-        if ((sharkAttacks[i].Country == 'USA') && (sharkAttacks[i].Year > 1900)) {
-            yearAttacks.push(sharkAttacks[i].Year),
-                dateAttacks.push(sharkAttacks[i].Date),
-                locAttacks.push(sharkAttacks[i].Location)
-            areaAttacks.push(sharkAttacks[i].Area);
-        }
-    }
-    // console.log(yearAttacks);
-    // console.log(dateAttacks);
-    // console.log(areaAttacks);
-    // console.log(locAttacks);
+    // Cast the hours value to a number for each piece of tvData
+    sharkData.forEach(function (data) {
+        data.hours = +data.hours;
+    });
+
     var barSpacing = 10; // desired space between each bar
     var scaleY = 10; // 10x scale on rect height
 
-    // Create a 'barWidth' variable so that the bar chart spans the entire chartWidth.
-    var barWidth = (chartWidth - (barSpacing * (sharkAttacks.length - 1))) / sharkAttacks.length;
+    //     // Create a 'barWidth' variable so that the bar chart spans the entire chartWidth.
+    var barWidth = (chartWidth - (barSpacing * (sharkData.length - 1))) / sharkData.length;
 
-        // @TODO
-        // Create code to build the bar chart using the tvData.
-        chartGroup.selectAll(".bar")
-            .data(yearAttacks)
-            .enter()
-            .append("rect")
-            .classed("bar", true)
-            .attr("width", d => barWidth)
-            .attr("height", d => yearAttacks * scaleY)
-            .attr("x", (d, i) => i * (barWidth + barSpacing))
-            .attr("y", d => chartHeight - yearAttacks * scaleY);
-    }).catch(function (error) {
-        console.log(error);
-    });
+    // @TODO
+    // Create code to build the bar chart using the tvData.
+    chartGroup.selectAll(".bar")
+        .data(sharkData)
+        .enter()
+        .append("rect")
+        .classed("bar", true)
+        .attr("width", d => barWidth)
+        .attr("height", d => yearAttacks * scaleY)
+        .attr("x", (d, i) => i * (barWidth + barSpacing))
+        .attr("y", d => chartHeight - yearAttacks * scaleY);
+}).catch(function (error) {
+    console.log(error);
+});

@@ -1,4 +1,5 @@
-from flask import Flask, jsonify
+# Import dependencies
+from flask import Flask, jsonify, render_template
 from sqlalchemy import inspect
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
@@ -11,42 +12,26 @@ from sqlalchemy.orm import Session, sessionmaker
 from sqlalchemy import select
 import json
 
-#################################################
-# Database Setup
-#################################################
-
-
-# class Shark_Attacks(Base):
-#     __tablename__ = 'shark_attacks'
-#     Id = Column(primary_key=True)
-#     Year = Column(Integer)
-#     Type = Column(String(255))
-#     Country = Column(String(255))
-#     Area = Column(String(255))
-#     Activity = Column(String(255))
-#     Fatal = Column(String(1))
-#     Species = Column(String(255))
+#Create DB path
 
 database_path = "shark_attacks.sqlite"
 engine = create_engine(f"sqlite:///{database_path}")
-# Base.metadata.create_all(engine)
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 print(Base.classes.keys())
 SharkAttacks = Base.classes.shark_attacks
 
-
-#################################################
 # Flask Setup
-#################################################
 
 app = Flask(__name__)
-# print all locations of shark attacks
-# attacks = session.query(Sharks) 
 
 @app.route("/")
-def welcome():
-    # Session = sessionmaker(bind=engine)
+def init():
+    return render_template("index.html")
+
+@app.route("/data")
+def data():
+
     session = Session(engine)
     results = session.query(SharkAttacks.id, SharkAttacks.year, SharkAttacks.type, SharkAttacks.country, 
     SharkAttacks.area, SharkAttacks.activity, SharkAttacks.fatal, SharkAttacks.species).all()
@@ -67,37 +52,9 @@ def welcome():
         shark_dict["fatal"] = fatal
         shark_dict["species"] = species
         all_sharks.append(shark_dict)
-
+        
     return jsonify(all_sharks)
 
-        # table = m.tables['shark_attacks']
-        # select_statement = select([table])
-        # conn = engine.connect()
-        # res = conn.execute(select_statement)
-        # arr = []
-        # for row in res:
-        #     arr.append(row)
-        # # return jsonify(arr)
-        # print(arr)
-        # # json_arr = jsonify(arr)
-        # # y = json.dumps(arr)
-        # # print(y)
-
-#################################################
-# Flask Routes
-#################################################
-
-# @app.route("/")
-# def welcome():
-#     """List all available api routes."""
-#     return (
-#         f"Available Routes:<br/>"
-#         f"/api/v1.0/names<br/>"
-#         f"/api/v1.0/passengers"
-#     )
-
-# @app.route("/types")
-# def types():
 
 if __name__ == '__main__':
     app.run(debug=True)
