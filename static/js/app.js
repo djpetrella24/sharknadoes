@@ -10,6 +10,7 @@ function getData() {
     var dropdownMenu = d3.select("#selDataset");
     // Assign the value of the dropdown menu option to a variable
     var dataset = dropdownMenu.property("value");
+    console.log(dataset);
 
     // Read in sharkdata
     var sharkData = d3.json("./data").then(function (sharkData) {
@@ -71,15 +72,28 @@ function getData() {
             type: "bar"
 
         };
+        var trace2 = [{
+            labels: ["2020", "2019", "2018"],
+            values: [numberAttacks_2020_usa, numberAttacks_2019_usa, numberAttacks_2018_usa],
+            type: "pie"
+        }];
+
+        var layout2 = {
+            height: 400,
+            width: 500,    
+          };
 
         var data = [trace1];
+        var data2 = [trace2];
 
         var layout = {
             title: "Number of Shark Attacks in United States by Year"
         };
 
         Plotly.newPlot("bar", data, layout);
+        Plotly.newPlot("pie", trace2, layout2);
 
+    
         if (dataset == 'AUSTRALIA') {
             for (var i = 0; i < sharkAttacks.length; i++) {
                 if (sharkAttacks[i].country == "AUSTRALIA") {
@@ -108,14 +122,26 @@ function getData() {
                 type: "bar"
 
             };
+            var trace2 = [{
+                labels: ["2020", "2019", "2018"],
+                values: [numberAttacks_2020_aus, numberAttacks_2019_aus, numberAttacks_2018_aus],
+                type: "pie"
+            }];
+    
+            var layout2 = {
+                height: 400,
+                width: 500,    
+              };
 
             var data = [trace1];
+            var data2 = [trace2];
 
             var layout = {
                 title: "Number of Shark Attacks in Australia by Year"
             };
 
             Plotly.newPlot("bar", data, layout);
+            Plotly.newPlot("pie", trace2, layout2);
 
         }
 
@@ -145,19 +171,30 @@ function getData() {
                 x: ["2020", "2019", "2018"],
                 y: [numberAttacks_2020_nz, numberAttacks_2019_nz, numberAttacks_2018_nz],
                 type: "bar"
-
             };
 
+            var trace2 = [{
+                labels: ["2020", "2019", "2018"],
+                values: [numberAttacks_2020_nz, numberAttacks_2019_nz, numberAttacks_2018_nz],
+                type: "pie"
+            }];
+
+            var layout2 = {
+                height: 400,
+                width: 500,    
+              };
+
             var data = [trace1];
+            var data2 = [trace2];
 
             var layout = {
                 title: "Number of Shark Attacks in New Zealand by Year"
             };
 
             Plotly.newPlot("bar", data, layout);
+            Plotly.newPlot("pie", trace2, layout2);
 
         }
-        // Build bar graph with data from functions
 
     });
 
